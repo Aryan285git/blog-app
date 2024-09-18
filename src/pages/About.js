@@ -1,16 +1,11 @@
-import userContext from "../context/userContext";
-import Base from "../components/Base";
+import React from 'react';
 
 const About = () => {
   return (
-    <userContext.Consumer>
-      {(object) => (
-        <Base>
-          <h1>this is about page</h1>
-          <p>we are building blog website</p>
-        </Base>
-      )}
-    </userContext.Consumer>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>About Us</h1>
+      <p>This page provides information about our company and our mission.</p>
+    </div>
   );
 };
 
